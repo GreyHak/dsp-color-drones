@@ -15,15 +15,21 @@ using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
+using System.Security;
+using System.Security.Permissions;
 
+[module: UnverifiableCode]
+#pragma warning disable CS0618 // Type or member is obsolete
+[assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
+#pragma warning restore CS0618 // Type or member is obsolete
 namespace DSPColorDrones
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
     [BepInProcess("DSPGAME.exe")]
     public class DSPColorDrones : BaseUnityPlugin
     {
-        public const string pluginGuid = "greyhak.dysonsphereprogram.:::NAME:::";
-        public const string pluginName = "DSP :::NAME:::";
+        public const string pluginGuid = "greyhak.dysonsphereprogram.colordrones";
+        public const string pluginName = "DSP Color Drones";
         public const string pluginVersion = "1.0.0";
         new internal static ManualLogSource Logger;
         new internal static BepInEx.Configuration.ConfigFile Config;
@@ -35,12 +41,23 @@ namespace DSPColorDrones
             Config = base.Config;  // "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\config\"
 
             harmony = new Harmony(pluginGuid);
-            harmony.PatchAll(typeof(DSP:::NAME:::));
+            harmony.PatchAll(typeof(DSPColorDrones));
         }
 
-        [HarmonyPfix, HarmonyPatch(typeof(CLASS), "FUNCTION")]
-        public static void CLASS_FUNCTION_Pfix()
+        [HarmonyPostfix, HarmonyPatch(typeof(MechaDroneLogic), "ReloadStates")]
+        public static void MechaDroneLogic_ReloadStates_Postfix()
         {
+            Texture2D newTexture = new Texture2D(512, 512);
+            for (int x = 0; x < newTexture.width; x++)
+            {
+                for (int y = 0; y < newTexture.height; y++)
+                {
+                    newTexture.SetPixel(x, y, new Color(0, 0, 1, 0));
+                }
+            }
+            newTexture.Apply();
+
+            GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;  // Original made up of 512x512 construction-drone-a.png, construction-drone-n.png, construction-drone-s.png
         }
     }
 }

@@ -7,10 +7,12 @@ Color your drones.  A template is provided with the mod in `BepInEx/config/greyh
 Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
 
 ![Flag Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png =128x128)
-![Aqua Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.aqua.png =128x128)
-![Bat Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.bat.png =128x128)
-![Super Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.super.png =128x128)
-![Wonder Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.wonder.png =128x128)
+![Flag Template Appearance In-Game](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/TemplateAppearance.jpg)
+
+![Aqua Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_aqua.png =128x128)
+![Bat Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_bat.png =128x128)
+![Super Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_super.png =128x128)
+![Wonder Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_wonder.png =128x128)
 
 If you like this mod, please click the thumbs up at the [top of the page](https://dsp.thunderstore.io/package/GreyHak/DSP_Color_Drones/) (next to the Total rating).  That would be a nice thank you for me, and help other people to find a mod you enjoy.
 

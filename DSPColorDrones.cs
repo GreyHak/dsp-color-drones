@@ -49,7 +49,7 @@ namespace DSPColorDrones
         {
             Texture2D newTexture = new Texture2D(512, 512);
 
-            string filePath = "BepInEx\\config\\greyhak.dysonsphereprogram.colordrones.png";
+            string filePath = $"BepInEx/config/{pluginGuid}.png";
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileData = System.IO.File.ReadAllBytes(filePath);

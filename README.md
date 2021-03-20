@@ -2,7 +2,15 @@
 
 **DSP Color Drones** is a mod for the Unity game Dyson Sphere Program developed by Youthcat Studio and published by Gamera Game.  The game is available on [here](https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/).
 
-DESCRIPTION
+Color your drones.  A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogram.colordrones.png`.
+
+Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
+
+![Flag Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png =128x128)
+![Aqua Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.aqua.png =128x128)
+![Bat Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.bat.png =128x128)
+![Super Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.super.png =128x128)
+![Wonder Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.wonder.png =128x128)
 
 If you like this mod, please click the thumbs up at the [top of the page](https://dsp.thunderstore.io/package/GreyHak/DSP_Color_Drones/) (next to the Total rating).  That would be a nice thank you for me, and help other people to find a mod you enjoy.
 

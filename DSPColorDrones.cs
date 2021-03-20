@@ -65,7 +65,10 @@ namespace DSPColorDrones
                 }
                 newTexture.Apply();
 
-                GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;  // Original made up of 512x512 construction-drone-a.png, construction-drone-n.png, construction-drone-s.png
+                // Original made up of 512x512 construction-drone-a.png, construction-drone-n.png, construction-drone-s.png
+                // Changing this changes all drones simultaneously.
+                // The change takes effect when MechaDroneRenderer.Draw is called which is called constantly.
+                GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;
             }
         }
     }

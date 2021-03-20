@@ -6,11 +6,11 @@ Color your drones.  Create and share your own designs.
 
 A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogram.colordrones.png`.
 
-![Flag Template](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png){:height="251px" width="251px"} ![Flag Template Appearance In-Game](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/TemplateAppearance.jpg)
+<img alt="Flag Template" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png" width="251" height="251"/> ![Flag Template Appearance In-Game](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/TemplateAppearance.jpg)
 
 Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
 
-![Aqua Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_aqua.png){:height="128px" width="128px"} ![Bat Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_bat.png){:height="128px" width="128px"} ![Super Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_super.png){:height="128px" width="128px"} ![Wonder Example](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_wonder.png){:height="128px" width="128px"}
+<img alt="Aqua Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_aqua.png" width="128" height="128"/> <img alt="Bat Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_bat.png" width="128" height="128"/> <img alt="Super Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_super.png" width="128" height="128"/> <img alt="Wonder Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_wonder.png" width="128" height="128"/>
 
 If you like this mod, please click the thumbs up at the [top of the page](https://dsp.thunderstore.io/package/GreyHak/DSP_Color_Drones/) (next to the Total rating).  That would be a nice thank you for me, and help other people to find a mod you enjoy.
 

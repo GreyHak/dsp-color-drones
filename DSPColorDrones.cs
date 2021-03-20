@@ -32,13 +32,13 @@ namespace DSPColorDrones
         public const string pluginName = "DSP Color Drones";
         public const string pluginVersion = "1.0.0";
         new internal static ManualLogSource Logger;
-        new internal static BepInEx.Configuration.ConfigFile Config;
+        //new internal static BepInEx.Configuration.ConfigFile Config;
         Harmony harmony;
 
         public void Awake()
         {
             Logger = base.Logger;  // "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\LogOutput.log"
-            Config = base.Config;  // "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\config\"
+            //Config = base.Config;  // "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\config\"
 
             harmony = new Harmony(pluginGuid);
             harmony.PatchAll(typeof(DSPColorDrones));
@@ -48,16 +48,25 @@ namespace DSPColorDrones
         public static void MechaDroneLogic_ReloadStates_Postfix()
         {
             Texture2D newTexture = new Texture2D(512, 512);
-            for (int x = 0; x < newTexture.width; x++)
-            {
-                for (int y = 0; y < newTexture.height; y++)
-                {
-                    newTexture.SetPixel(x, y, new Color(0, 0, 1, 0));
-                }
-            }
-            newTexture.Apply();
 
-            GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;  // Original made up of 512x512 construction-drone-a.png, construction-drone-n.png, construction-drone-s.png
+            string filePath = "BepInEx\\config\\greyhak.dysonsphereprogram.colordrones.png";
+            if (System.IO.File.Exists(filePath))
+            {
+                byte[] fileData = System.IO.File.ReadAllBytes(filePath);
+                newTexture.LoadImage(fileData);
+
+                for (int x = 0; x < newTexture.width; x++)
+                {
+                    for (int y = 0; y < newTexture.height; y++)
+                    {
+                        Color pixel = newTexture.GetPixel(x, y);
+                        newTexture.SetPixel(x, y, new Color(pixel.r, pixel.g, pixel.b, 0));
+                    }
+                }
+                newTexture.Apply();
+
+                GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;  // Original made up of 512x512 construction-drone-a.png, construction-drone-n.png, construction-drone-s.png
+            }
         }
     }
 }

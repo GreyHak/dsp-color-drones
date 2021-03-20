@@ -6,7 +6,7 @@ Color your drones.  Create and share your own designs.
 
 A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogram.colordrones.png`.
 
-<img alt="Flag Template" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png" width="251" height="251"/> ![Flag Template Appearance In-Game](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/TemplateAppearance.jpg)
+<img alt="Flag Template" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones.png" width="240" height="240"/> ![Flag Template Appearance In-Game](https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/TemplateAppearance.jpg)
 
 Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
 

@@ -30,7 +30,7 @@ namespace DSPColorDrones
     {
         public const string pluginGuid = "greyhak.dysonsphereprogram.colordrones";
         public const string pluginName = "DSP Color Drones";
-        public const string pluginVersion = "1.0.0";
+        public const string pluginVersion = "1.0.1";
         new internal static ManualLogSource Logger;
         //new internal static BepInEx.Configuration.ConfigFile Config;
         Harmony harmony;
@@ -44,16 +44,25 @@ namespace DSPColorDrones
             harmony.PatchAll(typeof(DSPColorDrones));
         }
 
+        [HarmonyPostfix, HarmonyPatch(typeof(GameMain), "Resume")]
+        public static void GameMain_Resume_Postfix()
+        {
+            MechaDroneLogic_ReloadStates_Postfix();
+        }
+
         [HarmonyPostfix, HarmonyPatch(typeof(MechaDroneLogic), "ReloadStates")]
         public static void MechaDroneLogic_ReloadStates_Postfix()
         {
             Texture2D newTexture = new Texture2D(512, 512);
+
+            // Original GameMain.mainPlayer.mecha.droneRenderer.mat_0.color = (0.175, 0.461, 1.000, 1.000) = 45, 118, 255
 
             string filePath = $"BepInEx/config/{pluginGuid}.png";
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileData = System.IO.File.ReadAllBytes(filePath);
                 newTexture.LoadImage(fileData);
+                Logger.LogInfo($"Successfully loaded drone skin {filePath}");
 
                 for (int x = 0; x < newTexture.width; x++)
                 {
@@ -69,6 +78,11 @@ namespace DSPColorDrones
                 // Changing this changes all drones simultaneously.
                 // The change takes effect when MechaDroneRenderer.Draw is called which is called constantly.
                 GameMain.mainPlayer.mecha.droneRenderer.mat_0.mainTexture = newTexture;
+            }
+            else
+            {
+                string cwd = System.IO.Directory.GetCurrentDirectory();
+                Logger.LogWarning($"Unable to find drone skin at {cwd}/{filePath}");
             }
         }
     }

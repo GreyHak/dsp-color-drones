@@ -2,7 +2,7 @@
 
 **DSP Color Drones** is a mod for the Unity game Dyson Sphere Program developed by Youthcat Studio and published by Gamera Game.  The game is available on [here](https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/).
 
-Color your drones.  Create and share your own designs.
+Color your drones.  Create and share your own skins.
 
 A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogram.colordrones.png`.
 
@@ -11,6 +11,8 @@ A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogra
 Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
 
 <img alt="Aqua Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_aqua.png" width="128" height="128"/> <img alt="Bat Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_bat.png" width="128" height="128"/> <img alt="Super Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_super.png" width="128" height="128"/> <img alt="Wonder Example" src="https://raw.githubusercontent.com/GreyHak/dsp-color-drones/main/config/greyhak.dysonsphereprogram.colordrones_wonder.png" width="128" height="128"/>
+
+The Windows 10 full default path, whether installed manually or through r2modman, is `C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\config\greyhak.dysonsphereprogram.colordrones.png`.  The mod looks specifically in the `BepInEx/config` folder.
 
 If you like this mod, please click the thumbs up at the [top of the page](https://dsp.thunderstore.io/package/GreyHak/DSP_Color_Drones/) (next to the Total rating).  That would be a nice thank you for me, and help other people to find a mod you enjoy.
 
@@ -27,5 +29,10 @@ This mod can also be installed using ebkr's [r2modman](https://dsp.thunderstore.
 The source code for this mod is available for download, review and forking on GitHub [here](https://github.com/GreyHak/dsp-color-drones) under the BSD 3 clause license.
 
 ## Change Log
+### v1.0.1
+ - Improved template.
+ - Reload skin on unpause.
+ - Added log entries when skin is successfully loaded or not found.
+ - README cleanup.
 ### v1.0.0
  - Initial release.

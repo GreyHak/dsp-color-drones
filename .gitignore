@@ -4,3 +4,8 @@ bin/Release
 Libraries/*.dll
 obj/Debug
 obj/Release
+config/construction-drone-a.png
+config/construction-drone-n.png
+config/construction-drone-s.png
+config/BepInEx-config.lnk
+config/construction drone - Shortcut.lnk

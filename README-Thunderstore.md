@@ -10,6 +10,8 @@ A template is provided with the mod in `BepInEx/config/greyhak.dysonsphereprogra
 
 Pre-built configurations are also available on [GitHub](https://github.com/GreyHak/dsp-color-drones/tree/main/config).
 
+Looking for nice color combinations, check out [ColorHunt's popular palettes](https://colorhunt.co/palettes/popular);
+
 The Windows 10 full default path, whether installed manually or through r2modman, is `C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\config\greyhak.dysonsphereprogram.colordrones.png`.  The mod looks specifically in the `BepInEx/config` folder.
 
 If you like this mod, please click the thumbs up at the [top of the page](https://dsp.thunderstore.io/package/GreyHak/DSP_Color_Drones/) (next to the Total rating).  That would be a nice thank you for me, and help other people to find a mod you enjoy.

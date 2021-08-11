@@ -30,7 +30,7 @@ namespace DSPColorDrones
     {
         public const string pluginGuid = "greyhak.dysonsphereprogram.colordrones";
         public const string pluginName = "DSP Color Drones";
-        public const string pluginVersion = "1.0.1";
+        public const string pluginVersion = "1.0.2";
         new internal static ManualLogSource Logger;
         //new internal static BepInEx.Configuration.ConfigFile Config;
         Harmony harmony;
@@ -57,7 +57,7 @@ namespace DSPColorDrones
 
             // Original GameMain.mainPlayer.mecha.droneRenderer.mat_0.color = (0.175, 0.461, 1.000, 1.000) = 45, 118, 255
 
-            string filePath = $"BepInEx/config/{pluginGuid}.png";
+            string filePath = $"{BepInEx.Paths.ConfigPath}/{pluginGuid}.png";
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileData = System.IO.File.ReadAllBytes(filePath);

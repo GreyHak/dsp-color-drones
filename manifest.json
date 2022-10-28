@@ -1,6 +1,6 @@
 {
     "name": "DSP_Color_Drones",
-    "version_number": "1.0.2",
+    "version_number": "1.0.3",
     "website_url": "https://github.com/GreyHak/dsp-color-drones",
     "description": "Set your own custom drone colors.  A template and samples are provided, plus you also have full control.",
     "dependencies": [

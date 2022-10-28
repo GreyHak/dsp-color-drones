@@ -26,11 +26,12 @@ namespace DSPColorDrones
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
     [BepInProcess("DSPGAME.exe")]
+    [BepInProcess("Dyson Sphere Program.exe")]
     public class DSPColorDrones : BaseUnityPlugin
     {
         public const string pluginGuid = "greyhak.dysonsphereprogram.colordrones";
         public const string pluginName = "DSP Color Drones";
-        public const string pluginVersion = "1.0.2";
+        public const string pluginVersion = "1.0.3";
         new internal static ManualLogSource Logger;
         //new internal static BepInEx.Configuration.ConfigFile Config;
         Harmony harmony;
